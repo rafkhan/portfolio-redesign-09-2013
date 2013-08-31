@@ -88,18 +88,58 @@ em {
   font-style: italic;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 49, ../sass/main.scss */
 .full-page {
   width: 100%;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .center-page {
-  width: 1024px;
+  max-width: 1024px;
   margin: auto;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
+.white-box-container {
+  height: 400px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+/* line 63, ../sass/main.scss */
+.white-box-container .white-box {
+  padding: 10px;
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+/* line 70, ../sass/main.scss */
+.white-box-container .white-box .icon {
+  text-align: center;
+  padding-top: 30px;
+}
+/* line 74, ../sass/main.scss */
+.white-box-container .white-box .icon i {
+  font-size: 100px;
+}
+/* line 78, ../sass/main.scss */
+.white-box-container .white-box .icon h3 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+/* line 84, ../sass/main.scss */
+.white-box-container .white-box p.description {
+  line-height: 1.5em;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+/* line 96, ../sass/main.scss */
 #intro-bar {
   height: 800px;
   background-image: url("../img/toronto-hipster.jpg");
@@ -110,65 +150,84 @@ em {
   font-weight: 100;
   color: white;
 }
-/* line 69, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 #intro-bar h1 {
   font-size: 70px;
   line-height: 100px;
 }
-/* line 74, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 #intro-bar p#slogan {
   font-size: 30px;
   margin-top: 15px;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 #bio-bar {
   background-color: #e04231;
   padding: 0 20px;
   padding-bottom: 50px;
   color: white;
 }
-/* line 87, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 #bio-bar h1 {
   font-size: 70px;
   padding: 50px 0;
   font-weight: 100;
+  margin-left: 10px;
 }
-/* line 93, ../sass/main.scss */
-#bio-bar .white-box-container {
-  height: 400px;
-  padding-right: 20px;
-  margin-bottom: 20px;
-}
-/* line 96, ../sass/main.scss */
-#bio-bar .white-box-container:last-child {
-  padding-right: 0px;
-}
-/* line 99, ../sass/main.scss */
-#bio-bar .white-box-container .white-box {
-  padding: 10px;
-  height: 100%;
-  background-color: white;
-  color: black;
-}
-/* line 106, ../sass/main.scss */
-#bio-bar .white-box-container .white-box .icon {
-  text-align: center;
-  padding-top: 30px;
-}
-/* line 110, ../sass/main.scss */
-#bio-bar .white-box-container .white-box .icon i {
-  font-size: 100px;
+/* line 133, ../sass/main.scss */
+#bio-bar .white-box .icon i {
   color: #e04231;
 }
-/* line 115, ../sass/main.scss */
-#bio-bar .white-box-container .white-box .icon h3 {
-  font-size: 30px;
-  margin-top: 20px;
+
+/* line 138, ../sass/main.scss */
+#portfolio-bar {
+  background-color: #008fd4;
+  color: white;
+  padding-bottom: 50px;
 }
-/* line 121, ../sass/main.scss */
-#bio-bar .white-box-container .white-box p.description {
-  line-height: 1.5em;
-  margin-top: 30px;
-  font-size: 16px;
+/* line 143, ../sass/main.scss */
+#portfolio-bar h1 {
+  font-size: 70px;
+  padding: 50px 0;
+  font-weight: 100;
+  margin-left: 10px;
+}
+/* line 150, ../sass/main.scss */
+#portfolio-bar .white-box .icon i {
+  color: #008fd4;
+  padding: 0 10px;
+}
+/* line 156, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 163, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal h2 {
+  font-size: 40px;
+}
+/* line 167, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 172, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal .portfolio-item {
+  margin-bottom: 10px;
+}
+/* line 175, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal .portfolio-item .cw-image {
+  background-color: black;
+}
+/* line 177, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal .portfolio-item .portfolio-text {
+  padding-left: 10px;
+}
+/* line 180, ../sass/main.scss */
+#portfolio-bar #jobs-bar #jobs-bar-internal .portfolio-item .portfolio-text h3 {
+  font-size: 30px;
 }

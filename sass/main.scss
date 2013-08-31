@@ -38,6 +38,11 @@ em {
 	font-style: italic;
 }
 
+p {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
 
 // REUSABLE CLASSES
 //******************
@@ -46,8 +51,42 @@ em {
 }
 
 .center-page {
-	width: $center-page-width;
+	max-width: $center-page-width;
 	margin: auto;
+}
+
+.white-box-container {
+	height: 400px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+
+	.white-box {
+		padding: 10px;
+		height: 100%;
+
+		background-color: white;
+		color: black;
+
+		.icon {
+			text-align: center;
+			padding-top: 30px;
+
+			i {
+				font-size: 100px;
+			};
+
+			h3 {
+				font-size: 30px;
+				margin-top: 20px;
+			};
+		}
+
+		p.description {
+			line-height: 1.5em;
+			margin-top: 30px;
+			font-size: 16px;
+		}
+	}
 }
 
 
@@ -88,40 +127,60 @@ em {
 		font-size: 70px;
 		padding: 50px 0;
 		font-weight: 100;
+		margin-left: 10px;
 	}
 
-	.white-box-container {
-		height: 400px;
-		padding-right: 20px;
-		&:last-child { padding-right: 0px; }
-		margin-bottom: 20px;
+	.white-box .icon i {
+		color: $red;
+	}
+}
 
-		.white-box {
-			padding: 10px;
-			height: 100%;
+#portfolio-bar {
+	background-color: $blue;
+	color: white;
+	padding-bottom: 50px;
 
+	h1 {
+		font-size: 70px;
+		padding: 50px 0;
+		font-weight: 100;
+		margin-left: 10px;
+	}
+
+	.white-box .icon i {
+		color: $blue;
+		padding: 0 10px;
+	}
+
+	#jobs-bar {
+		#jobs-bar-internal {
 			background-color: white;
 			color: black;
+			padding: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
 
-			.icon {
-				text-align: center;
-				padding-top: 30px;
-
-				i {
-					font-size: 100px;
-					color: $red;
-				};
-
-				h3 {
-					font-size: 30px;
-					margin-top: 20px;
-				};
+			h2 {
+				font-size: 40px;
 			}
 
-			p.description {
-				line-height: 1.5em;
-				margin-top: 30px;
-				font-size: 16px;
+			p {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			.portfolio-item {
+				margin-bottom: 10px;
+
+				.cw-image {background-color: black;}
+
+				.portfolio-text {
+					padding-left: 10px;
+
+					h3 {
+						font-size: 30px;
+					}
+				}
 			}
 		}
 	}
